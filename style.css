@@ -123,17 +123,14 @@ body{
     font-weight: 600;
 }
 
-@media(max-width:568px){
-    .navbar-nav{
-        display: none;
-    }
+.side-drp{
+    display: none;
+    background: #161515;
+    transition: 1s;
+    padding-left: 25px;
 }
 
-
-/* 
-@media(min-width:568px){
-    .open-slide{
-        display: none;
-    }
-} */
-
+.side-drp-show{
+    display: block;
+    background: #1f1d1d;
+}
