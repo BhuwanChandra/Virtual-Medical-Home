@@ -7,13 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Responsive side menu</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="head">
     <nav class="navbar">
         <span class="open-slide">
-            <a href="#" onclick="openSlideMenu()">
+            <a onclick="openSlideMenu()">
                 <svg width="30" height="30">
                     <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
                     <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
@@ -29,16 +32,14 @@
     </nav>
 
     <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="">Home</a>
-        <div class="side-drp">
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="">Contact</a>
-        </div>
-        <a href="">About</a>
-        <a href="">Services</a>
-        <a href="">Contact</a>
+        <ul>
+            <li><a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        
     </div>
 
     <div id="main">
@@ -51,8 +52,52 @@
     </div>
 </div>
 
-<div class="main-content">
-    
+<div class="main-page">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Request Appointment</h5>
+            <h6 class="card-subtitle mb-2 text-muted"></h6>
+            <p class="card-text">Request an appointment to a doctor for further checkup</p>
+            
+            <a href="#" class="card-link">Get Help<i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Find Doctors</h5>
+            <h6 class="card-subtitle mb-2 text-muted"></h6>
+            <p class="card-text">Request an appointment to a doctor for further checkup</p>
+
+            <a href="#" class="card-link">Get Help<i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Request Appointment</h5>
+            <h6 class="card-subtitle mb-2 text-muted"></h6>
+            <p class="card-text">Request an appointment to a doctor for further checkup</p>
+
+            <a href="#" class="card-link">Get Help<i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Find Doctors</h5>
+            <h6 class="card-subtitle mb-2 text-muted"></h6>
+            <p class="card-text">Request an appointment to a doctor for further checkup</p>
+
+            <a href="#" class="card-link">Get Help<i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Request Appointment</h5>
+            <h6 class="card-subtitle mb-2 text-muted"></h6>
+            <p class="card-text">Request an appointment to a doctor for further checkup</p>
+
+            <a href="#" class="card-link">Get Help<i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
 </div>
 
     <script>
