@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive side menu</title>
+    <link rel="stylesheet" href="User.css" />
+</head>
+
+<body>
+    <div class="head">
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+
+            <ul class="navbar-nav">
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="firstaid.html">First Aid</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="profile-section">
+            <img class="user-img" src="user.jpg" alt="">
+            <h1>Krish Gayle</h1>
+        </div>
+
+        <div class="information">
+            <div>
+                Name:
+                <div class="info">
+                    Krish Gayle
+                </div>
+            </div>
+            <div>
+                Email:
+                <div class="info">
+                    krish@yahoo.com
+                </div>
+            </div>
+            <div>
+                Age:
+                <div class="info">
+                    19
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById("side-menu").style.width = "250px";
+        }
+        function closeSlideMenu() {
+            document.getElementById("side-menu").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>
