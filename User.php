@@ -11,32 +11,9 @@
 
 <body>
     <div class="head">
-        <nav class="navbar">
-            <span class="open-slide">
-                <a href="#" onclick="openSlideMenu()">
-                    <svg width="30" height="30">
-                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-                    </svg>
-                </a>
-            </span>
-
-            <ul class="navbar-nav">
-                <li><a href="signup.html">Signup</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-
-        <div id="side-menu" class="side-nav">
-            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-            <a href="home.html">Home</a>
-            <a href="firstaid.html">First Aid</a>
-            <a href="">About</a>
-            <a href="">Services</a>
-            <a href="contact.html">Contact</a>
-        </div>
-
+        <?php
+        require "partials/navbar.php";
+        ?>
     </div>
 
     <div class="main-content">
@@ -90,11 +67,11 @@
             <div>
                 Birth Mark(if any):
                 <div class="info">
-                    
+
                 </div>
             </div>
-            
-            
+
+
             <div>
                 Family Information: <br>
             </div>
@@ -107,21 +84,13 @@
             <div>
                 Mother's Name:
                 <div class="info">
-                    
+
                 </div>
             </div>
         </div>
 
     </div>
 
-    <script>
-        function openSlideMenu() {
-            document.getElementById("side-menu").style.width = "250px";
-        }
-        function closeSlideMenu() {
-            document.getElementById("side-menu").style.width = "0";
-        }
-    </script>
 </body>
 
 </html>
