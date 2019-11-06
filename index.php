@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+// if (!isset($_SESSION['currentUser'])) {
+//     header('location:Home.html');
+// }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +22,10 @@
 
 <body>
     <div class="head">
-        <nav class="navbar">
+        <?php 
+            require "partials/navbar.php";
+        ?>
+        <!-- <nav class="navbar">
             <span class="open-slide">
                 <a href="#" onclick="openSlideMenu()">
                     <svg width="30" height="30">
@@ -21,38 +35,49 @@
                     </svg>
                 </a>
             </span>
-    
+
             <ul class="navbar-nav">
-                <li><a href="signup.html">Signup</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="logout.php">LogOut</a></li>
+                <li><a href="User.html">Welcome  </a></li>
             </ul>
         </nav>
-    
+
         <div id="side-menu" class="side-nav">
             <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
             <a href="home.html">Home</a>
-            <a href="">First Aid</a>
+            <a href="firstaid.html">First Aid</a>
             <a href="">About</a>
             <a href="">Services</a>
-            <a href="">Contact</a>
-        </div>
-    
+            <a href="contact.html">Contact</a>
+        </div> -->
+
         <div id="main">
-            <h1>Contact Us</h1>
-            <input type="text"> <input type="text"><br>
-            <input type="email"><br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <center>
+                <p class="heading">
+                    Virtual Medical Home
+                </p>
+                <p class="sbheading">The Online Medical services</p>
+            </center>
         </div>
     </div>
+
+    <div class="main-content">
+
+<?php 
+echo "<h1>This is main Content</h1>";
+?>
+
+    </div>
+<!-- 
     <script>
         function openSlideMenu() {
             document.getElementById("side-menu").style.width = "250px";
-            //document.getElementById("main").style.marginLeft = "250px";
         }
+
         function closeSlideMenu() {
             document.getElementById("side-menu").style.width = "0";
-            //document.getElementById("main").style.marginLeft = "0";
         }
-    </script>
+    </script> -->
 </body>
+
 </html>
