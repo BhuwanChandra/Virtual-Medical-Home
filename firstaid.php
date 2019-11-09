@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +18,7 @@
 <body>
     <div class="head">
         <?php
-            require "partials/navbar.php";
+        require "partials/navbar.php";
         ?>
         <div id="main">
             <center>
