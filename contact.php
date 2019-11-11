@@ -20,12 +20,14 @@ session_start();
         <?php
         require "partials/navbar.php";
         ?>
-
         <div id="main">
-            <h1>Contact Us</h1>
-            <input type="text"> <input type="text"><br>
-            <input type="email"><br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div id="contact-form">
+                <h1>Contact Us</h1>
+                <input class="contact-input" type="text" name="name" placeholder="User Name"> <br>
+                <input class="contact-input" type="email" name="email" placeholder="Email"><br>
+                <input class="contact-input" type="tel" name="phone" placeholder="Phone Number(Optional)"><br>
+                <textarea class="contact-input" type="text" name="message" cols="30" rows="10" placeholder="Message..."></textarea>
+            </div>
         </div>
     </div>
 </body>
