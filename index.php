@@ -12,14 +12,14 @@ session_start();
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Responsive side menu</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Virtual Medical Home</title>
+    <link rel="stylesheet" href="style.css?v=<?= time(); ?>" />
 </head>
 
 <body>
-    <div class="head">
-        <?php 
-            require "partials/navbar.php";
+    <div id="bg" class="head">
+        <?php
+        require "partials/navbar.php";
         ?>
         <!-- <nav class="navbar">
             <span class="open-slide">
@@ -59,21 +59,10 @@ session_start();
 
     <div class="main-content">
 
-<?php 
-echo "<h1>This is main Content</h1>";
-?>
+        <?php
+        echo "<h1>This is main Content</h1>";
+        ?>
 
-    </div>
-<!-- 
-    <script>
-        function openSlideMenu() {
-            document.getElementById("side-menu").style.width = "250px";
-        }
-
-        function closeSlideMenu() {
-            document.getElementById("side-menu").style.width = "0";
-        }
-    </script> -->
 </body>
 
 </html>
