@@ -36,10 +36,6 @@
         <a href="index.php">Home</a>
         <a href="firstaid.php">First Aid</a>
         <a href="about.php">About</a>
-        <a href="">Doctors</a>
-<<<<<<< HEAD
+        <a href="doctors.php">Doctors</a>
         <a href="contact.php">Contact Us</a>
-=======
-        <a href="contact.php">Contact</a>
->>>>>>> 3068cad0764bc7949105bca85bb5aee72aeabb3a
     </div>
