@@ -1,24 +1,25 @@
-<?php
+<?php require "partials/header.php" ?>
+<link rel="stylesheet" href="User.css?v=<?= time(); ?>" />
+</head>
 
-session_start();
+<?php
 
 if (!isset($_SESSION['currentUser'])) {
     header('location:index.php');
 }
 
 ?>
+<script>
+    function enableEditing() {
+        let inputs = document.querySelectorAll("input");
 
+        inputs.forEach(element => {
+            element.removeAttribute("disabled");
+        });
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Responsive side menu</title>
-    <link rel="stylesheet" href="User.css" />
-</head>
+        document.querySelector(".submitBtn").style.display = "block";
+    }
+</script>
 
 <body>
     <div class="head">
@@ -28,7 +29,7 @@ if (!isset($_SESSION['currentUser'])) {
     </div>
 
     <div class="main-content">
-        <button class="button">EDIT</button>
+        <button class="button" onclick="enableEditing()">EDIT</button>
     </div>
 
     <div class="main-content">
@@ -39,65 +40,61 @@ if (!isset($_SESSION['currentUser'])) {
         </div>
 
         <div class="information">
-            <div>
-                Name:
-                <div class="info">
-                    Krish Gayle
+            <form action="#">
+                <div class="info-tag">
+                    General Information: <br>
                 </div>
-            </div>
-            <div>
-                Email:
-                <div class="info">
-                    krish@yahoo.com
+                <hr>
+                <div>
+                    Name: <br>
+                    <input type="text" name="name" class="info" placeholder="Name" value="" disabled>
                 </div>
-            </div>
-            <div>
-                Age:
-                <div class="info">
-                    19
+                <div>
+                    Email: <br>
+                    <input type="email" name="email" class="info" placeholder="Email" value="" disabled>
                 </div>
-            </div>
-            <div>
-                Height:
-                <div class="info">
-                    168cm
-                </div>
-            </div>
-            <div>
-                Weight:
-                <div class="info">
-                    64kg
-                </div>
-            </div>
-            <div>
-                Blood Group:
-                <div class="info">
-                    A+
-                </div>
-            </div>
-            <div>
-                Birth Mark(if any):
-                <div class="info">
 
+                <div class="info-tag">
+                    Health Information: <br>
                 </div>
-            </div>
-
-
-            <div>
-                Family Information: <br>
-            </div>
-            <div>
-                Father's Name:
-                <div class="info">
-                    Raju
+                <hr>
+                <div>
+                    Age: <br>
+                    <input type="number" name="age" class="info" placeholder="Age(in years)" value="" disabled>
                 </div>
-            </div>
-            <div>
-                Mother's Name:
-                <div class="info">
-
+                <div>
+                    Height: <br>
+                    <input type="number" name="height" class="info" placeholder="Height(in centimeters)" value="" disabled>
                 </div>
-            </div>
+                <div>
+                    Weight: <br>
+                    <input type="number" name="weight" class="info" placeholder="Weight(in KGs)" value="" disabled>
+                </div>
+                <div>
+                    Blood Group: <br>
+                    <input type="text" name="bloodGroup" class="info" placeholder="Blood Group" value="" disabled>
+                </div>
+                <div>
+                    Birth Mark: <br>
+                    <input type="text" name="birthMark" class="info" placeholder="Birth Mark(if any)" value="" disabled>
+                </div>
+
+                <div class="info-tag">
+                    Family Information: <br>
+                </div>
+                <hr>
+                <div>
+                    Father's Name: <br>
+                    <input type="text" name="fatherName" class="info" placeholder="Father's Name" value="" disabled>
+                </div>
+                <div>
+                    Mother's Name: <br>
+                    <input type="text" name="motherName" class="info" placeholder="Mother's Name" value="" disabled>
+                </div>
+                <div>
+                    <button type="submit" class="submitBtn">Update Information</button>
+                </div>
+            </form>
         </div>
 
     </div>

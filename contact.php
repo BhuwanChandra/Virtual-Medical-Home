@@ -1,7 +1,7 @@
 <?php
 require "partials/header.php"
 ?>
-<link rel="stylesheet" href="contact.css" />
+<link rel="stylesheet" href="contact.css?v=<?= time(); ?>" />
 </head>
 
 <body>

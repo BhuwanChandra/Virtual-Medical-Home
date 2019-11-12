@@ -15,7 +15,7 @@ body{
     overflow: hidden;
 }
 .navbar{
-    background-color: #36daf7;
+    background-color: #8206e8;
     overflow: hidden;
     height: 63px;
     padding-right: 5vw;
@@ -50,11 +50,11 @@ body{
 
 .navbar li a:hover{
     background-color: #ffffff;
-    color: #06cbfc;
+    color: #8206e8;
 }
 
 .navbar .open-slide a:hover{
-    background-color: #0ac7f7;
+    background-color: #8749fa;
 }
 
 .side-nav{
@@ -113,7 +113,8 @@ body{
     margin-bottom: 30px;
     padding: 50px;
     width: 70vw;
-    background: #0ac7f7;
+    color: #b4ebf8;
+    background: #4d4d4d;
 }
 #main .first-aid-content p{
     width: 70vw;
@@ -140,7 +141,7 @@ body{
 .heading{
     padding-top: 8vh;
     padding-bottom: 8vh;
-    text-shadow: 0 1px 0.3px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 1px 0.3px #ffffff99;
     font-size: 80px;
     font-weight: 800;
 }

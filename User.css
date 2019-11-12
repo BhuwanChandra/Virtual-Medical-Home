@@ -13,7 +13,7 @@ body{
     overflow: hidden;
 }
 .navbar{
-    background-color: #36daf7;
+    background-color: #8206e8;
     overflow: hidden;
     height: 63px;
     padding-right: 5vw;
@@ -48,11 +48,11 @@ body{
 
 .navbar li a:hover{
     background-color: #ffffff;
-    color: #06cbfc;
+    color: #8206e8;
 }
 
 .navbar .open-slide a:hover{
-    background-color: #0ac7f7;
+    background-color: #8749fa;
 }
 
 .side-nav{
@@ -111,7 +111,7 @@ body{
 
 .heading{
     padding-top: 35vh;
-    text-shadow: 0 1px 0.3px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 1px 0.3px #ffffff99;
     font-size: 80px;
     font-weight: 800;
 }
@@ -123,14 +123,10 @@ body{
 
 .main-content{
     display: flex;
-    background: #6fd7f74f;
 }
 
 .profile-section{
-    margin-left: 5vw;
-    margin-right: 3vw;
-    margin-top: 3vw;
-    margin-bottom: 5vw;
+    margin:3vw;
 
 }
 
@@ -140,33 +136,74 @@ body{
 }
 
 .information{
-    margin-top: 3vw;
-    width: 70vw;
+    background: #c4c4c4;
+    padding: 3vw;
+    margin: 3vw auto;
+    width: 55vw;
     font-size: 24px;
+}
+
+.information hr{
+    margin-bottom: 20px;
+    background: #1f1d1d;
+    border: 1px solid #1f1d1d;
+}
+
+.information input{
+    font-size: 18px;
 }
 
 .info{
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 6px;
     color: #282929;
     border: 1px solid #282929;
     border-radius: 5px;
     width: 90%;
 }
 
+.info-tag{
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #6e04c4;
+}
+
 .button{
-    margin-left: 5vw;
+    margin-left: 3vw;
     margin-top: 3vw;
-    background: #06cbfc;
-    padding: 5px;
+    background: #8206e8;
+    padding: 8px;
     font-size: 24px;
     width: 10vw;
     border: none;
     outline: none;
     border-radius: 5px;
     color: #ffffff;
+}
+
+.submitBtn{
+    display: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    background: #8206e8;
+    padding: 8px 30px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.button:hover,.submitBtn:hover{
+    cursor: pointer;
+    background: #7305ce;
+    box-shadow: 1px 1px 1px #484949;
 }
 /* .record{
     margin-right: 20px;
