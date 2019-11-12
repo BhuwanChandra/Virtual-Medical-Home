@@ -36,7 +36,7 @@ if (!isset($_SESSION['currentUser'])) {
 
         <div class="profile-section">
             <img class="user-img" src="user.jpg" alt="">
-            <h1>Rohan Sinha</h1>
+           <?php echo '<h1>'.$_SESSION['currentUser'].'</h1>'; ?>
         </div>
 
         <div class="information">
@@ -53,7 +53,7 @@ if (!isset($_SESSION['currentUser'])) {
                     Email: <br>
                     <input type="email" name="email" class="info" placeholder="Email" value="" disabled>
                 </div>
-
+                
                 <div class="info-tag">
                     Health Information: <br>
                 </div>
