@@ -32,6 +32,7 @@ require "partials/header.php"
             <a href="firstaid.html">First Aid</a>
             <a href="">About</a>
             <a href="">Services</a>
+            <a href="">List of common diseases</a>
             <a href="contact.html">Contact</a>
         </div> -->
 
