@@ -6,11 +6,12 @@ body{
 }
 
 .head{
-    /* background-image: url(medical1.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-image: url(healthcare-01.jpg);
 	background-size: cover;
-    background-repeat:no-repeat; */
+    background-repeat:no-repeat;
     padding: 0;
-    overflow: hidden;
 }
 .navbar{
     background-color: #8206e8;
@@ -62,7 +63,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #111111;
     opacity: 0.9;
     overflow-x: hidden;
     padding-top: 60px;
@@ -81,7 +82,7 @@ body{
 
 .side-nav a:hover{
     color: #fff;
-    background: #1f1d1d;
+    background: #242222;
 }
 
 .side-nav .btn-close{
@@ -93,19 +94,16 @@ body{
 }
 
 #main{
-    height: 100vh;
     margin: 0;
-    transition: margin-left 0.5s;
     padding: 20px;
-    overflow: hidden;
     width: 100%;
-    background: #6fd7f74f;
+    background: #6fd7f744;
 }
 
 
 .heading,.sbheading{
     font-family: 'Montserrat';
-    color: #013744;
+    color: #f2f2f289;
     margin: 0;
 }
 
@@ -121,102 +119,64 @@ body{
     font-weight: 600;
 }
 
-.main-content{
-    display: flex;
+#login-reg{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    min-height: 80vh;
+    width: 40vw;
+    background: linear-gradient(130deg,#720bf8,#d11efd);
+    box-shadow: 3px 3px 3px #012e3a7e;
 }
 
-.profile-section{
-    margin:3vw;
-
-}
-
-.user-img{
-    height: 40vh;
-    width: 25vw;
-}
-
-.information{
-    background: #c4c4c4;
-    padding: 3vw;
-    margin: 3vw auto;
-    width: 55vw;
-    font-size: 24px;
-}
-
-.information hr{
+#login-reg p{
+    margin-top: 20px;
+    font-size: 3rem;
     margin-bottom: 20px;
-    background: #1f1d1d;
-    border: 1px solid #1f1d1d;
+    text-shadow: 1px 1px 1px #f2f2f289;
+    color: #f0f0f0;
 }
 
-.information input{
-    font-size: 18px;
+#login-reg hr{
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 32vw;
 }
 
-.info{
-    margin-right: 10px;
+#login-reg input, textarea{
+    padding: 7px;
+    font-size: 22px;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 6px;
-    color: #282929;
-    border: 1px solid #282929;
+    width: 28vw;
     border-radius: 5px;
-    width: 90%;
-}
-
-.info-tag{
-    margin-top: 30px;
-    font-weight: 600;
-    font-size: 30px;
-    color: #6e04c4;
-}
-
-.button{
-    margin-left: 3vw;
-    margin-top: 3vw;
-    background: #8206e8;
-    padding: 8px;
-    font-size: 24px;
-    width: 10vw;
-    border: none;
+    border: 1px solid #02c3e6;
+    box-shadow: .5px .5px .5px #f2f2f289;
     outline: none;
-    border-radius: 5px;
-    color: #ffffff;
 }
 
-.submitBtn{
-    display: none;
-    margin-right: 10px;
+#login-reg button{
+    padding: 7px;
+    font-size: 22px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    margin-top: 30px;
-    font-weight: 600;
-    font-size: 30px;
-    background: #8206e8;
-    padding: 8px 30px;
-    font-size: 24px;
-    border: none;
-    outline: none;
+    width: 29.2vw;
     border-radius: 5px;
-    color: #ffffff;
+    color: #8206e8;
+    font-weight: 600;
+    border: 1px solid #02c3e6;
+    background: #f8f8f8;
+    box-shadow: .5px .5px .5px #f2f2f289;
+    outline: none;
 }
 
-.button:hover,.submitBtn:hover{
+#login-reg button:hover{
     cursor: pointer;
-    background: #7305ce;
-    box-shadow: 1px 1px 1px #484949;
+    box-shadow: 1.2px 1.2px 1.2px #f2f2f289;
 }
-/* .record{
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding: 15px;
-    height: 100px;
-    width: 30vw;
-    box-shadow:  .1px .1px 1px 1px #6d6d6d88;
-} */
 
 @media(max-width:568px){
     .navbar-nav{
         display: none;
     }
 }
-

@@ -6,19 +6,13 @@ body {
 }
 
 .head {
-  height: 100vh;
+  height: 75vh;
   width: 100vw;
-  background-image: url(bgimg1.jpg);
+  background-image: url(healthcare-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0;
   overflow: hidden;
-}
-
-#bg {
-  background-image: url(bgimg1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .navbar {
@@ -102,25 +96,25 @@ body {
 }
 
 #main {
-  height: 100vh;
+  height: 70vh;
   margin: 0;
   transition: margin-left 0.5s;
   padding: 20px;
   overflow: hidden;
   width: 100%;
-  background: #6fd7f74f;
+  /* background: #6fd7f74f; */
 }
 
 .heading,
 .sbheading {
   font-family: "Montserrat";
-  color: #022027;
+  color: #011216;
   text-shadow: 1px 1px 1px #eceaeac9;
   margin: 0;
 }
 
 .heading {
-  padding-top: 35vh;
+  padding-top: 25vh;
   text-shadow: 2px 2px 2px #f5f1f1b7;
   font-size: 90px;
   font-weight: 800;
@@ -130,12 +124,59 @@ body {
   font-size: 30px;
   font-weight: 600;
 }
-/* 
+
+
+.doctors-sec {
+  width: 75vw;
+  margin: auto;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 2em;
+  /* box-shadow: .5px 1px 1px #3b3b3b89; */
+}
+
+.doctor {
+  padding: 10px;
+  border: 1px solid #1f1d1d;
+}
+
+.doctor img {
+  width: 99%;
+  height: 320px;
+}
+
+.doctor a{
+    text-decoration: none;
+}
+
+.doctor a{
+    width: 99%;
+    height: 28px;
+    border-radius: 6px;
+    margin: 10px 0;
+    color: #f2f2f2;
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 500;
+    background: #8206e8;
+}
+
+.doctor .doctor-btn:hover{
+    cursor: pointer;
+    background: #6b04be;
+    box-shadow: 1px 1px 1px #535353;
+}
+
+
 @media (max-width: 568px) {
   .navbar-nav {
     display: none;
   }
-} */
+}
 
 @media (max-width: 720px) {
   .heading {

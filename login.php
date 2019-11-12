@@ -1,5 +1,5 @@
 <?php require "partials/header.php" ?>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=<?= time(); ?>" />
     <link rel="stylesheet" href="signup.css">
 </head>
 

@@ -26,6 +26,7 @@ if($num == 1){
     
     $_SESSION['currentUser'] = $name;
     $_SESSION['currentUserEmail'] = $email;
+    $_SESSION['user'] = "Patient";
     header('location:index.php');
 
 }else {
