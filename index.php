@@ -48,9 +48,6 @@ require "partials/header.php"
 
     <div class="main-content">
 
-        <?php
-        echo "<h1>This is main Content</h1>";
-        ?>
     </div>
 </body>
 

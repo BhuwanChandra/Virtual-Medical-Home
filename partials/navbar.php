@@ -22,20 +22,21 @@
         <?php
         if (isset($_SESSION['currentUser'])) {
             echo '<li> <a href="logout.php" >LogOut </a> </li>';
-            echo '<li><a href="User.php ">Welcome '.$_SESSION['currentUser'].'</a></li>';
-            } else {
+            echo '<li><a href="User.php ">Welcome ' . $_SESSION['currentUser'] . '</a></li>';
+        } else {
             echo '<li><a href="signup.php">Signup</a></li>
             <li><a href="login.php">Login</a></li>';
-            }
-            ?>
-        </ul>
-    </nav>
+        }
+        ?>
+    </ul>
+</nav>
 
-    <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="index.php">Home</a>
-        <a href="firstaid.php">First Aid</a>
-        <a href="about.php">About</a>
-        <a href="doctors.php">Doctors</a>
-        <a href="contact.php">Contact Us</a>
-    </div>
+<div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.php">Home</a>
+    <a href="firstaid.php">First Aid</a>
+    <a href="disease.html">Common Diseases</a>
+    <a href="about.php">About Us</a>
+    <a href="doctors.php">Doctors</a>
+    <a href="contact.php">Contact Us</a>
+</div>
