@@ -25,6 +25,11 @@ require "partials/header.php"
             </center>
         </div>
     </div>
+
+    <?php
+    require "partials/footer.php"
+    ?>
+
 </body>
 
 </html>

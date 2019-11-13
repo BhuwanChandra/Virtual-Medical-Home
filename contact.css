@@ -140,6 +140,8 @@ body{
     padding: 0;
     margin-top: 10px;
     margin-bottom: 30px;
+    background: #b9b8b8;
+    border: 1px solid #b9b8b8;
     width: 32vw;
 }
 
