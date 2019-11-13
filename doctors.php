@@ -64,6 +64,9 @@ require "partials/header.php"
             <a href="" class="doctor-btn">Get Appointment</a>
         </div>
     </div>
+    <?php
+    require "partials/footer.php"
+    ?>
 </body>
 
 </html>

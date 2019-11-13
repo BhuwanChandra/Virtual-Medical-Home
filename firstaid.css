@@ -101,7 +101,7 @@ body{
     padding: 20px;
     overflow: hidden;
     width: 100%;
-    background: #6fd7f74f;
+    background: #06212980;
 }
 #main h2{
     margin-top: 80px;
@@ -113,8 +113,8 @@ body{
     margin-bottom: 30px;
     padding: 50px;
     width: 70vw;
-    color: #b4ebf8;
-    background: #4d4d4d;
+    color: #eef5f7;
+    background: #8749fa;
 }
 #main .first-aid-content p{
     width: 70vw;
@@ -134,15 +134,15 @@ body{
 }
 .heading,.sbheading{
     font-family: 'Montserrat';
-    color: #013744;
+    color: #fbf5ff;
     margin: 0;
 }
 
 .heading{
     padding-top: 8vh;
     padding-bottom: 8vh;
-    text-shadow: 0 1px 0.3px #ffffff99;
-    font-size: 80px;
+    text-shadow: 1px 1px 2px #6e6e6e;
+    font-size: 90px;
     font-weight: 800;
 }
 

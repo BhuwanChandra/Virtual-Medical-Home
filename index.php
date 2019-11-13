@@ -46,9 +46,9 @@ require "partials/header.php"
         </div>
     </div>
 
-    <div class="main-content">
-
-    </div>
+    <?php
+        require "partials/footer.php"
+    ?>
 </body>
 
 </html>

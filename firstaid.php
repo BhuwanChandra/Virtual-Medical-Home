@@ -1,6 +1,5 @@
-
 <?php require "partials/header.php" ?>
-    <link rel="stylesheet" href="firstaid.css?v=<?= time(); ?>" />
+<link rel="stylesheet" href="firstaid.css?v=<?= time(); ?>" />
 </head>
 
 <body>
@@ -54,7 +53,7 @@
             <li>Allergies</li>
         </ul><br>
     </div>
-    <div class="home-first-aid" style="background: #6fd7f74f;">
+    <div class="home-first-aid" style="background: #cccccc;">
         <h1>Make Your Own First Aid Kit</h1>
 
         <p>Try to keep your kit small and simple. Stock it with multi-use items. Almost anything that provides good visibility of
@@ -85,6 +84,9 @@
                 wherever you spend time.</li><br>
         </ul>
     </div>
+    <?php
+    require "partials/footer.php"
+    ?>
 </body>
 
 </html>
