@@ -28,20 +28,20 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="firstaid.php">First Aid</a></li>
                 <li><a href="about.php">About</a></li>
-                <li><a href="">Doctors</a></li>
+                <li><a href="doctors.php">Doctors</a></li>
                 <li><a href="contact.php">Contact Us</a></li>
             </div>
             <div class="sec1">
                 <div class="tag">Featured Links</div>
                 <hr>
                 <?php
-                if (!isset($_SESSION['currentUser']) || ($_SESSION['user'] == "Doctor")) {
-                    echo '<li><a href="firstaid.php">Login as a Doctor</a></li>';
-                    echo '<li><a href="index.php">SignUp as a Doctor</a></li>';
+                if (!isset($_SESSION['currentUser']) || ($_SESSION['user'] != "Doctor")) {
+                    echo '<li><a href="doctorReg.php">Login as a Doctor</a></li>';
+                    echo '<li><a href="doctorReg.php">SignUp as a Doctor</a></li>';
                 }
                 ?>
                 <li><a href="about.php">Privacy policy</a></li>
-                <li><a href="">Terms of use</a></li>
+                <li><a href="about.php">Terms of use</a></li>
             </div>
             <div class="sec1">
                 <div class="tag">
@@ -58,7 +58,7 @@
             <center>
                 <p>
                     <h5 style="margin:8px;"> &copy; 2019-20 <a href="">Virtual Medical Home</a></h5>
-                    <span style="font-size:18px;"> Project by Bhuwan Chandra and Kriti</span>
+                    <span style="font-size:18px;"> Project by Bhuwan Chandra and Kriti Kalash</span>
                 </p>
             </center>
         </div>
