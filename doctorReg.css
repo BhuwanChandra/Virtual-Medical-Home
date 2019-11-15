@@ -173,6 +173,8 @@ textarea {
 
 #login-reg button:hover {
   cursor: pointer;
+  color: #7f06e2;
+  background: #ebeaea;
   box-shadow: 1.2px 1.2px 1.2px #f2f2f289;
 }
 
