@@ -23,12 +23,13 @@ $result = mysqli_query($con, $q);
 $num = mysqli_num_rows($result);
 
 if($num == 1){
-    
-    $_SESSION['currentUser'] = $name;
-    $_SESSION['currentUserEmail'] = $email;
-    $_SESSION['user'] = "Patient";
-    header('location:index.php');
-
+    while ($row = mysqli_fetch_assoc($result)) {
+        $_SESSION['currentUser_id'] = $row['id'];
+        $_SESSION['currentUser'] = $row['name'];
+        $_SESSION['currentUserEmail'] = $row['email'];
+        $_SESSION['user'] = "Patient";
+        header('location:index.php');
+    }
 }else {
     header('location:login.php');
 }

@@ -29,8 +29,12 @@ if($num == 1){
 }else {
     $qy = " insert into users(name , email , password) values('$name', '$email', '$pass') ";
     mysqli_query($con, $qy);
-    $_SESSION['currentUser'] = $name;
-    $_SESSION['currentUserEmail'] = $email;
-    $_SESSION['user'] = "Patient";
-    header('location:index.php');
+    $result = mysqli_query($con, $q);
+    while ($row = mysqli_fetch_assoc($result)) {
+        $_SESSION['currentUser_id'] = $row['id'];
+        $_SESSION['currentUser'] = $row['name'];
+        $_SESSION['currentUserEmail'] = $row['email'];
+        $_SESSION['user'] = "Patient";
+        header('location:index.php');
+    }
 }
