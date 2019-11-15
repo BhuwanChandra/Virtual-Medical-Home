@@ -16,25 +16,25 @@ $name = $_POST['username'];
 $email = $_POST['email'];
 $pass = $_POST['password'];
 
-$q = " select * from users where name = '$name' && email = '$email'";
+$q = " select * from doctors where name = '$name' && email = '$email' && password = '$pass' ";
 
 $result = mysqli_query($con, $q);
 
 $num = mysqli_num_rows($result);
 
+echo $num;
+
 if ($num == 1) {
-    if (password_verify($_POST["password"], $result["password"])) {
-        $_SESSION['user_id'] = $result['user_id'];
-        $_SESSION['username'] = $result['username'];
-        $_SESSION['user'] = "Patient";
-        header('location:index.php');
-    } else {
-        $message = '<label>Wrong Password</label>';
-    }
-    // $_SESSION['currentUser'] = $name;
-    // $_SESSION['currentUserEmail'] = $email;
-    // $_SESSION['user'] = "Patient";
-    header('location:doctorProfile.php');
-} else {
+        while($row = mysqli_fetch_assoc($result)) {
+            $_SESSION[ 'currentUser_id'] = $row['doctor_id'];
+            $_SESSION[ 'currentUser'] = $row['name'];
+            $_SESSION[ 'currentUserEmail'] = $row['email'];
+            $_SESSION['user'] = "Doctor";
+           header('location:index.php');
+        
+        }
+}else {
     header('location:doctorReg.php');
 }
+
+?>

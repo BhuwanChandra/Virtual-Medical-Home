@@ -16,8 +16,8 @@ mysqli_select_db($con, 'vmhdb_login');
 
 $name = $_POST['username'];
 $email = $_POST['email'];
-$phone = $_POST['phone'];
 $pass = $_POST['password'];
+$phone = $_POST['phone'];
 
 $q = " select * from doctors where name = '$name' && email = '$email' ";
 
@@ -28,11 +28,17 @@ $num = mysqli_num_rows($result);
 if ($num == 1) {
     echo " user already present";
 } else {
-    $password = password_hash($pass, PASSWORD_DEFAULT);
-    $qy = "insert into doctors(name , email , phone , password) values('$name', '$email', $phone, '$password') ";
+    $qy = " insert into doctors(name , email , phone_no , password) values('$name', '$email', '$phone', '$pass') ";
     mysqli_query($con, $qy);
-    $_SESSION['currentUser'] = $name;
-    $_SESSION['currentUserEmail'] = $email;
-    $_SESSION['user'] = "Doctor";
-    header('location:index.php');
+    $result = mysqli_query($con, $q);
+    while ($row = mysqli_fetch_assoc($result)) {
+        $_SESSION['currentUser_id'] = $row['doctor_id'];
+        $_SESSION['currentUser'] = $row['name'];
+        $_SESSION['currentUserEmail'] = $row['email'];
+        $_SESSION['user'] = "Doctor";
+        header('location:index.php');
+    }
 }
+
+
+?>
