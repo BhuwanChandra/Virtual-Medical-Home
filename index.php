@@ -2,6 +2,7 @@
 require "partials/header.php"
 ?>
 <link rel="stylesheet" href="style.css?v=<?= time(); ?>" />
+<link rel="stylesheet" href="slide.css?v=<?= time(); ?>" />
 </head>
 
 <body>
@@ -46,9 +47,42 @@ require "partials/header.php"
         </div>
     </div>
 
+    <div class="our-services">
+
+    </div>
+
+    <div class="our-vision">
+        <div class="vision">
+            <center>
+                <p class="vision-head">OUR VISION</p>
+            </center>
+            <p class="vision-text">Aim of <strong style="color:#e19fff;">
+                    "Virtual Medical Home"</strong> project is to provide essential medical services online to everyone hardly matters
+                you live in metro or a remotely located village. Users can connect through their home internet or approach any
+                nearby kiosk to get these services. <br><br>
+                The <strong style="color:#e19fff;">"Virtual Medical Home"</strong> - Practical Applications of Patient-Centered
+                Medical home principles. Geriatric and primary care practices can transform patient care at the practice level
+                by increasing access,improving care coordination,and analyzing practice-specific data. <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="what-user-says">
+        <div class="input-leftcontainer" id="input-leftcontainer">
+            <div class="imgbanbtn imgbanbtn-prev" id="imgbanbtn-prev"></div>
+            <div class="imgban" id="imgban3"></div>
+            <div class="imgban" id="imgban2"></div>
+            <div class="imgban" id="imgban1"></div>
+            <div class="imgbanbtn imgbanbtn-next" id="imgbanbtn-next"></div>
+        </div>
+    </div>
+
     <?php
-        require "partials/footer.php"
+    require "partials/footer.php"
     ?>
+
+
+    <script src="new.js?v=<?= time(); ?>"></script>
 </body>
 
 </html>
