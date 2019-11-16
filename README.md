@@ -7,5 +7,5 @@
     you live in metro or a remotely located village. Users can connect through their home internet or approach any
     nearby kiosk to get these services.
     
-    The "Virtual Medical Home"- Practical Applications of Patient-Centered Medical home principles. Geriatric and primary care practices can transform patient care at the practice level by increasing access,improving care coordination,and analyzing practice-specific data.
+    The "Virtual Medical Home"- Practical Applications of Patient-Centered Medical home principles.<br> Geriatric and primary care practices can transform patient care at the practice level by increasing access,improving care coordination,and analyzing practice-specific data.
 
