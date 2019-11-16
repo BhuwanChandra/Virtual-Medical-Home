@@ -19,47 +19,47 @@ require "partials/header.php"
     </div>
     <div class="doctors-sec">
         <div class="doctor">
-            <img src="user.jpg" alt="">
+            <img src="images/user.jpg" alt="">
             <a href="" class="doctor-btn">View Profile</a>
             <a href="appoint.html" class="doctor-btn">Get Appointment</a>
         </div>
         <div class="doctor">
-            <img src="user.jpg" alt="">
+            <img src="images/user.jpg" alt="">
             <a href="" class="doctor-btn">View Profile</a>
             <a href="" class="doctor-btn">Get Appointment</a>
         </div>
         <div class="doctor">
-            <img src="user.jpg" alt="">
+            <img src="images/user.jpg" alt="">
             <a href="" class="doctor-btn">View Profile</a>
             <a href="" class="doctor-btn">Get Appointment</a>
         </div>
         <div class="doctor">
-            <img src="user.jpg" alt="">
+            <img src="images/user.jpg" alt="">
             <a href="" class="doctor-btn">View Profile</a>
             <a href="appoint.html" class="doctor-btn">Get Appointment</a>
         </div>
         <div class="doctor">
-            <img src="user.jpg" alt="">
+            <img src="images/user.jpg" alt="">
             <a href="" class="doctor-btn">View Profile</a>
             <a href="" class="doctor-btn">Get Appointment</a>
         </div>
         <div class="doctor">
-            <img src="user.jpg" alt="">
+            <img src="images/user.jpg" alt="">
             <a href="" class="doctor-btn">View Profile</a>
             <a href="" class="doctor-btn">Get Appointment</a>
         </div>
         <div class="doctor">
-            <img src="user.jpg" alt="">
+            <img src="images/user.jpg" alt="">
             <a href="" class="doctor-btn">View Profile</a>
             <a href="appoint.html" class="doctor-btn">Get Appointment</a>
         </div>
         <div class="doctor">
-            <img src="user.jpg" alt="">
+            <img src="images/user.jpg" alt="">
             <a href="" class="doctor-btn">View Profile</a>
             <a href="" class="doctor-btn">Get Appointment</a>
         </div>
         <div class="doctor">
-            <img src="user.jpg" alt="">
+            <img src="images/user.jpg" alt="">
             <a href="" class="doctor-btn">View Profile</a>
             <a href="" class="doctor-btn">Get Appointment</a>
         </div>

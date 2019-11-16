@@ -47,11 +47,15 @@ if (!isset($_SESSION['currentUser'])) {
                 <hr>
                 <div>
                     Name: <br>
-                    <input type="text" name="name" class="info" placeholder="Name" value="" disabled>
+                    <input type="text" name="name" class="info" placeholder="Name" value="<?php echo $_SESSION['currentUser']; ?>" disabled>
                 </div>
                 <div>
                     Email: <br>
-                    <input type="email" name="email" class="info" placeholder="Email" value="" disabled>
+                    <input type="email" name="email" class="info" placeholder="Email" value="<?php echo $_SESSION['currentUserEmail']; ?>" disabled>
+                </div>
+                <div>
+                    DOB: <br>
+                    <input type="date" name="email" class="info" placeholder="date of birth" value="<?php echo $_SESSION['currentUserDOB']; ?>" disabled>
                 </div>
 
                 <div class="info-tag">
@@ -72,7 +76,7 @@ if (!isset($_SESSION['currentUser'])) {
                 </div>
                 <div>
                     Blood Group: <br>
-                    <input type="text" name="bloodGroup" class="info" placeholder="Blood Group" value="" disabled>
+                    <input type="text" name="bloodGroup" class="info" placeholder="Blood Group" maxlength="3" value="" disabled>
                 </div>
                 <div>
                     Birth Mark: <br>
@@ -100,7 +104,7 @@ if (!isset($_SESSION['currentUser'])) {
     </div>
 
     <?php
-    require "partials/header.php"
+    require "partials/footer.php"
     ?>
 
 </body>

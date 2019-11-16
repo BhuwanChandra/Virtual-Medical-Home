@@ -34,7 +34,7 @@
             <li>Sprains</li>
             <li>Strains</li>
         </ul>
-        <img src="first aid.jpg" alt="first aid kit" style="float: right;margin: 20px;" height="400px" width="400px">
+        <img src="images/first aid.jpg" alt="first aid kit" style="float: right;margin: 20px;" height="400px" width="400px">
         <p>First aid kits for travel need to be more comprehensive because a drug store may or may not be accessible. In addition
             to personal medical items, the kit should contain items to help alleviate the common symptoms of viral respiratory
             infections such as these:</p>
@@ -58,7 +58,7 @@
 
         <p>Try to keep your kit small and simple. Stock it with multi-use items. Almost anything that provides good visibility of
             contents can be used for a household first aid kit.</p>
-        <img src="firstaidkit.jpg" alt="first aid kit" style="float: right;margin: 20px;" height="400px" width="400px">
+        <img src="images/firstaidkit.jpg" alt="first aid kit" style="float: right;margin: 20px;" height="400px" width="400px">
         <ul>
             <li>If your kit will be on the move, a water-resistant, drop-proof container is best.</li>
             <li>Inexpensive nylon bags, personal kits, fanny packs, or makeup cases serve very well.</li>
