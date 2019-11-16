@@ -1,0 +1,73 @@
+
+.what-user-says{
+    padding: 0;
+}
+
+.input-leftcontainer {
+  background: #929292;
+  height: 600px;
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+.input-leftcontainer .imgban {
+  height: 600px;
+  width: 100vw;
+  margin: 0;
+  position: absolute;
+  transition: all ease-in-out 500ms;
+}
+.input-leftcontainer #imgban3 {
+  height: 600px;
+  width: 100vw;
+  margin: 0;
+  background: #34e343;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.input-leftcontainer #imgban2 {
+  height: 600px;
+  width: 100vw;
+  margin: 0;
+  background: #3494e3;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.input-leftcontainer #imgban1 {
+  height: 600px;
+  width: 100vw;
+  margin: 0;
+  background: #cf34e3;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.imgbanbtn {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 4px;
+  position: absolute;
+  top: 260px;
+  z-index: 2000;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.imgbanbtn:hover {
+  opacity: 0.9;
+}
+.imgbanbtn-prev {
+    margin-left: 50px;
+  background-image: url(images/images/left.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.imgbanbtn-next {
+    margin-right: 70px;
+  right: 0px;
+  background-image: url(images/images/right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
