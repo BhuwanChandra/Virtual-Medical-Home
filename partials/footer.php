@@ -29,7 +29,7 @@
                 <li><a href="firstaid.php">First Aid</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="doctors.php">Doctors</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="contact.php">Give Feedback</a></li>
             </div>
             <div class="sec1">
                 <div class="tag">Featured Links</div>
@@ -40,8 +40,8 @@
                     echo '<li><a href="doctorReg.php">SignUp as a Doctor</a></li>';
                 }
                 ?>
-                <li><a href="about.php">Privacy policy</a></li>
-                <li><a href="about.php">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms of use</a></li>
             </div>
             <div class="sec1">
                 <div class="tag">
