@@ -70,9 +70,42 @@ require "partials/header.php"
     <div class="what-user-says">
         <div class="input-leftcontainer" id="input-leftcontainer">
             <div class="imgbanbtn imgbanbtn-prev" id="imgbanbtn-prev"></div>
-            <div class="imgban" id="imgban3"></div>
-            <div class="imgban" id="imgban2"></div>
-            <div class="imgban" id="imgban1"></div>
+            <div class="imgban" id="imgban3">
+                <img class="user-ex-img" src="images/user.jpg" alt="">
+                <div class="user-ex-txt">
+                    <div class="user-name">"Rohan Sinha"</div>
+                    <div class="user-text">
+                        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque quo adipisci repudiandae
+                        voluptates voluptatem aliquid assumenda iste officiis sequi possimus quas eveniet numquam architecto
+                        quidem, sunt libero quasi ut aperiam quod. Commodi in facere inventore est! Quas dolorem explicabo
+                        ducimus et distinctio, cupiditate Applications."
+                    </div>
+                </div>
+            </div>
+            <div class="imgban" id="imgban2">
+                <img class="user-ex-img" src="images/user.jpg" alt="">
+                <div class="user-ex-txt">
+                    <div class="user-name">"Yash Vargantwar"</div>
+                    <div class="user-text">
+                        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque quo adipisci repudiandae
+                        voluptates voluptatem aliquid assumenda iste officiis sequi possimus quas eveniet numquam architecto
+                        quidem, sunt libero quasi ut aperiam quod. Commodi in facere inventore est! Quas dolorem explicabo
+                        ducimus et distinctio, cupiditate Applications."
+                    </div>
+                </div>
+            </div>
+            <div class="imgban" id="imgban1">
+                <img class="user-ex-img" src="images/user.jpg" alt="">
+                <div class="user-ex-txt">
+                    <div class="user-name">"Avdhesh Saroj"</div>
+                    <div class="user-text">
+                        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque quo adipisci repudiandae
+                        voluptates voluptatem aliquid assumenda iste officiis sequi possimus quas eveniet numquam architecto
+                        quidem, sunt libero quasi ut aperiam quod. Commodi in facere inventore est! Quas dolorem explicabo
+                        ducimus et distinctio, cupiditate Applications."
+                    </div>
+                </div>
+            </div>
             <div class="imgbanbtn imgbanbtn-next" id="imgbanbtn-next"></div>
         </div>
     </div>

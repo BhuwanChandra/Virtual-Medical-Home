@@ -34,7 +34,17 @@ if($num == 1){
         $_SESSION['currentUser_id'] = $row['id'];
         $_SESSION['currentUser'] = $row['name'];
         $_SESSION['currentUserEmail'] = $row['email'];
+        $_SESSION['currentUserDOB'] = $row['dob'];
+        $_SESSION['currentUserAge'] = $row['age'];
+        $_SESSION['currentUserHeight'] = $row['height'];
+        $_SESSION['currentUserWeight'] = $row['weight'];
+        $_SESSION['currentUserBloodGroup'] = $row['bloodGroup'];
+        $_SESSION['currentUserBirthMark'] = $row['birthMark'];
+        $_SESSION['currentUserFathersName'] = $row['fathersName'];
+        $_SESSION['currentUserMothersName'] = $row['mothersName'];
         $_SESSION['user'] = "Patient";
         header('location:index.php');
     }
 }
+
+?>
