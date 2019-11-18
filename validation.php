@@ -33,3 +33,4 @@ if($num == 1){
 }else {
     header('location:login.php');
 }
+?>

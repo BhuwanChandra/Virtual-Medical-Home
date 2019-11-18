@@ -59,7 +59,7 @@ body{
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 10000;
     top: 0;
     left: 0;
     background-color: #111;
@@ -205,6 +205,27 @@ body{
     background: #7305ce;
     box-shadow: 1px 1px 1px #484949;
 }
+
+.del-btn{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 3vw;
+    background: #ff4b4b;
+    padding: 8px;
+    font-size: 24px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.del-btn:hover{
+    cursor: pointer;
+    background: #ff3939;
+    box-shadow: 1px 1px 1px #676868;
+}
+
 /* .record{
     margin-right: 20px;
     margin-bottom: 20px;
