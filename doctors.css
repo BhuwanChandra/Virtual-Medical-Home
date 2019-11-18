@@ -62,7 +62,7 @@ body {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 10000;
   top: 0;
   left: 0;
   background-color: #111;
@@ -102,20 +102,20 @@ body {
   padding: 20px;
   overflow: hidden;
   width: 100%;
-  /* background: #6fd7f74f; */
+  background: #1d1d1d71;
 }
 
 .heading,
 .sbheading {
   font-family: "Montserrat";
-  color: #011216;
-  text-shadow: 1px 1px 1px #eceaeac9;
+  color: #fff5fc;
+  text-shadow: 1px 1px 1px #727272e0;
   margin: 0;
 }
 
 .heading {
   padding-top: 25vh;
-  text-shadow: 2px 2px 2px #f5f1f1b7;
+  text-shadow: 2px 2px 2px #727272e0;
   font-size: 90px;
   font-weight: 800;
 }
@@ -163,6 +163,18 @@ body {
     padding-bottom: 8px;
     font-weight: 500;
     background: #8206e8;
+}
+
+.doctor-name{
+    width: 99%;
+    height: 28px;
+    margin: 10px 0;
+    color: #222222;
+    font-size: 24px;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 600;
 }
 
 .doctor .doctor-btn:hover{

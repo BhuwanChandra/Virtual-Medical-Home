@@ -16,6 +16,8 @@ $name = $_POST['username'];
 $email = $_POST['email'];
 $pass = $_POST['password'];
 
+echo $name.$email.$pass;
+
 $q = " select * from doctors where name = '$name' && email = '$email' && password = '$pass' ";
 
 $result = mysqli_query($con, $q);
@@ -34,7 +36,7 @@ if ($num == 1) {
         
         }
 }else {
-    header('location:doctorReg.php');
+    // header('location:doctorReg.php');
 }
 
 ?>
