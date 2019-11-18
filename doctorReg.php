@@ -51,7 +51,7 @@ require "partials/header.php"
                             <form action="doctorSignup.php" method="post">
                                 <input class="contact-input" type="text" name="username" placeholder="User Name" required> <br>
                                 <input class="contact-input" type="email" name="email" placeholder="Email" required><br>
-                                <input class="contact-input" type="tel" name="phone" placeholder="Phone Number(Optional)" required><br>
+                                <input class="contact-input" type="tel" name="phone" placeholder="Phone Number(Optional)"><br>
                                 <input class="contact-input" type="password" name="password" placeholder="Password" required><br>
                                 <button type="submit">Register</button>
                             </form>
