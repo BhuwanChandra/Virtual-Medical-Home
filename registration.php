@@ -1,18 +1,8 @@
 <?php
 
-session_start();
+require "connection.php";
 
 header('location:index.php');
-
-$con = mysqli_connect('localhost','root');
-
-if ($con) {
-    echo" connection successful";
-}else {
-    echo" no connection";
-}
-
-mysqli_select_db($con, 'vmhdb_login');
 
 $name = $_POST['username'];
 $email = $_POST['email'];
