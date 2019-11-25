@@ -1,17 +1,7 @@
 <?php
 
+require "connection.php";
 
-session_start();
-
-$con = mysqli_connect('localhost', 'root');
-
-if ($con) {
-    echo " connection successful";
-} else {
-    echo " no connection";
-}
-
-mysqli_select_db($con, 'vmhdb_login');
 // $user_id = $_POST["user_id"];
 $user_id = $_SESSION["currentUser_id"];
 
