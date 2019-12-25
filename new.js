@@ -7,15 +7,6 @@ var startBannerLoop = setInterval(function() {
   bannerloop();
 }, bannertimer);
 
-// document.getElementById("input-leftcontainer").onmouseenter = function() {
-//   clearInterval(startBannerLoop);
-// };
-
-// document.getElementById("input-leftcontainer").onmouseleave = function() {
-//   startBannerLoop = setInterval(function() {
-//     bannerloop();
-//   }, bannertimer);
-// };
 document.getElementById("imgbanbtn-next").onclick = function() {
   bannerloop();
 };
