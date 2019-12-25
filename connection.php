@@ -19,8 +19,6 @@ if ($con) {
     echo " no connection";
 }
 
-$hello = NULL;
-
 mysqli_select_db($con, 'vmhdb_login');
 
 ?>
