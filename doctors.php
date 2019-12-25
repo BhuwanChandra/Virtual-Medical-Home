@@ -7,13 +7,12 @@ require "partials/header.php"
 
 <?php
 
-$con = mysqli_connect('localhost', 'root');
+require "connection.php";
 
 if (!$con) {
     header('location:index.php');
 }
 
-mysqli_select_db($con, 'vmhdb_login');
 
 // if (!isset($_SESSION['currentUser'])) {
 //     header('location:index.php');
